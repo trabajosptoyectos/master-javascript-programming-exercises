@@ -1,14 +1,23 @@
+var obj = {
+  name: 'Montana',
+  age: 20,
+  location: 'Texas'
+};
+
 function removeStringValuesLongerThan(num, obj) {
     // your code here
-    removeNumbersLessThan(5, obj);
-console.log(obj);
+    for (var key in obj) { 
+      console.log(String(obj[key]).length);              
+      if(String(obj[key]).length > num){
+        console.log("delete")
+          delete obj[key]
+      }
+          
+
+    }
 
 }
 
-var obj = {
-    name: 'Montana',
-    age: 20,
-    location: 'Texas'
-  };
-  removeStringValuesLongerThan(6, obj);
-  console.log(obj);
+
+removeStringValuesLongerThan(6, obj);
+console.log(obj);
