@@ -2,6 +2,7 @@ var currentInventory = [
     {
         name: 'Brunello Cucinelli',
         shoes: [
+            
             { name: 'tasselled black low-top lace-up', price: 1000 },
             { name: 'tasselled green low-top lace-up', price: 1100 },
             { name: 'plain beige suede moccasin', price: 950 },

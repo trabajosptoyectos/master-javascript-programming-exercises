@@ -1,3 +1,8 @@
-function listAllValues(obj) {
-  // your code here
+function listAllValues(obj)
+ {
+   var ans =[];
+   for(var k in obj) {
+     ans.push(obj[k]);
+   }
+  return ans
 }

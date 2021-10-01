@@ -27,3 +27,13 @@ PhoneNumberFormatter.prototype.parenthesize = function(string) {
 PhoneNumberFormatter.prototype.slice = function(start, end) {
   return this.numbers.slice(start, end).join('');
 };
+
+function createPhoneNumber(numbers){
+  numbers = numbers.join('');
+  return '(' + numbers.substring(0,3) + ')' 
+      + numbers.substring(3, 6)
+      + '-'
+      + numbers.substring(6);
+}
+
+console.log(createPhoneNumber([6, 5, 0, 8, 3, 5, 9, 1, 7, 2]));
